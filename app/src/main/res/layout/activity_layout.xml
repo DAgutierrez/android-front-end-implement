@@ -1,191 +1,210 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@color/colorPrimary"
-    android:orientation="horizontal"
-    tools:context="diego_gutierrez.androidfrontendimplement.LayoutActivity">
-
-
-    <TextView
-        android:id="@+id/tit_linear"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Linear Layout"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textColor="@color/colorAccent"
-        android:textSize="30dp"/>
 
 
     <LinearLayout
-        android:id="@+id/cont_linear"
-        android:layout_below="@+id/tit_linear"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="15dp"
-        android:orientation="horizontal"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="diego_gutierrez.androidfrontendimplement.LayoutActivity"
         >
 
-        <TextView
-            android:id="@+id/txt_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Text 1"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:textSize="30dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Text 2"
-            android:id="@+id/txt_2"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:textSize="30dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Text 3"
-            android:id="@+id/txt_3"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:textSize="30dp"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
 
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/tit_relative"
-        android:layout_below="@+id/cont_linear"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Relative Layout"
-        android:textColor="@color/colorAccent"
-
-        android:textSize="30dp"/>
-
-    <RelativeLayout
-        android:id="@+id/cont_relative"
-        android:layout_below="@+id/tit_relative"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginTop="15dp"
-        >
-
-        <TextView
-            android:id="@+id/txt_1_rel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Text 1"
-            android:textSize="30dp"/>
-
-        <TextView
-            android:id="@+id/txt_2_rel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Text 2"
-            android:layout_below="@+id/txt_1_rel"
-
-            android:textSize="30dp"/>
-
-        <TextView
-            android:id="@+id/txt_3_rel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Text 3"
-            android:layout_toRightOf="@+id/txt_2_rel"
-            android:textSize="30dp"/>
-
-        <TextView
-            android:id="@+id/txt_4_rel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Text 4"
-            android:layout_toRightOf="@+id/txt_2_rel"
-            android:layout_below="@+id/txt_3_rel"
-            android:textSize="30dp"/>
-
-
-    </RelativeLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Match Parent"
-        android:id="@+id/textView4"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/cont_relative"
-        android:textSize="30dp"
-        android:textColor="@color/colorAccent"
-        android:layout_marginTop="15dp"/>
-
-
-    <LinearLayout
-
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_below="@+id/textView4"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="15dp"
-        android:id="@+id/linearLayout">
-        <TextView
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Testing text"
-            android:id="@+id/textView2"
-            android:background="@color/red"
-            android:textSize="30dp"/>
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:id="@+id/tit_linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Linear Layout"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="30dp"/>
+
+
+            <LinearLayout
+                android:id="@+id/cont_linear"
+                android:layout_below="@+id/tit_linear"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/txt_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Text 1"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Text 2"
+                    android:id="@+id/txt_2"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Text 3"
+                    android:id="@+id/txt_3"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="30dp"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tit_relative"
+                android:layout_below="@+id/cont_linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Relative Layout"
+                android:textColor="@color/colorAccent"
+
+                android:textSize="30dp"/>
+
+            <RelativeLayout
+                android:id="@+id/cont_relative"
+                android:layout_below="@+id/tit_relative"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="15dp"
+                >
+
+                <TextView
+                    android:id="@+id/txt_1_rel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Text 1"
+                    android:textSize="30dp"/>
+
+                <TextView
+                    android:id="@+id/txt_2_rel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Text 2"
+                    android:layout_below="@+id/txt_1_rel"
+
+                    android:textSize="30dp"/>
+
+                <TextView
+                    android:id="@+id/txt_3_rel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Text 3"
+                    android:layout_toRightOf="@+id/txt_2_rel"
+                    android:textSize="30dp"/>
+
+                <TextView
+                    android:id="@+id/txt_4_rel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Text 4"
+                    android:layout_toRightOf="@+id/txt_2_rel"
+                    android:layout_below="@+id/txt_3_rel"
+                    android:textSize="30dp"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Match Parent"
+                android:id="@+id/textView4"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/cont_relative"
+                android:textSize="30dp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="15dp"/>
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/textView4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="15dp"
+                android:id="@+id/linearLayout">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Testing Text"
+                    android:id="@+id/textView2"
+                    android:background="@color/red"
+                    android:textSize="30dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wrap Content"
+                android:id="@+id/textView5"
+                android:layout_below="@+id/linearLayout"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="30dp"
+                android:layout_marginTop="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/textView5"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Testing Text"
+                    android:id="@+id/textView3"
+                    android:layout_below="@+id/linearLayout"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="30dp"
+                    android:background="@color/red"/>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        </ScrollView>
+
+
     </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Wrap Content"
-        android:id="@+id/textView5"
-        android:layout_below="@+id/linearLayout"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textColor="@color/colorAccent"
-        android:textSize="30dp"
-        android:layout_marginTop="15dp"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_below="@+id/textView5"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="15dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Wrap Content"
-            android:id="@+id/textView3"
-            android:layout_below="@+id/linearLayout"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:textSize="30dp"
-            android:background="@color/red"/>
-    </LinearLayout>
-
-
-
-
-</RelativeLayout>
