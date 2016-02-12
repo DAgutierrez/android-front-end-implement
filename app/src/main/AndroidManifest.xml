@@ -15,8 +15,12 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".LayoutActivity"
+        <activity
+            android:name=".LayoutActivity"
             android:label="layout">
+        </activity>
+        <activity android:name=".ScrollViewActivity"
+                  android:label="Scroll">
         </activity>
     </application>
 

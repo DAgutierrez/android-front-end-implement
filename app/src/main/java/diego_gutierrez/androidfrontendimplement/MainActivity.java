@@ -23,5 +23,15 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        final Button btnScroll = (Button) findViewById(R.id.button_scroll);
+
+        btnScroll.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ScrollViewActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 }

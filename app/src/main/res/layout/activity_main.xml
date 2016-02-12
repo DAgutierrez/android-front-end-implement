@@ -20,4 +20,13 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scroll View"
+        android:id="@+id/button_scroll"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btn_layout"
+        android:layout_toEndOf="@+id/btn_layout"/>
 </RelativeLayout>
